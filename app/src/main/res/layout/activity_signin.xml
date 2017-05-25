@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    style="@style/SignInTheme"
+    tools:context="internship.wadimakkah.com.internship.SigninActivity">
+
+    <TextView
+        style="@style/title"
+        android:id="@+id/startupLogo" />
+
+
+    <EditText
+        android:id="@+id/signinEmail"
+        android:hint="Email"
+        style="@style/editText" />
+
+    <EditText
+        android:id="@+id/signinPass"
+        android:hint="Password"
+        android:inputType="textPassword"
+        style="@style/editText" />
+
+    <Button
+        android:text="@string/forgetpw"
+        android:id="@+id/forgotPassword"
+        android:layout_gravity="right"
+        style="@style/Textbutton"/>
+
+    <Button
+        android:id="@+id/Signin"
+        android:text="@string/title"
+        style="@style/signbutton" />
+
+    <Button
+        android:id="@+id/SignupMail"
+        android:text="@string/mailsignup"
+        style="@style/signbutton" />
+
+    <Button
+        android:id="@+id/SignupGit"
+        android:text="@string/githupsignup"
+        style="@style/signbutton" />
+
+
+
+
+</LinearLayout>

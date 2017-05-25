@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "212888257922",
+    "firebase_url": "https://internship-57a51.firebaseio.com",
+    "project_id": "internship-57a51",
+    "storage_bucket": "internship-57a51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212888257922:android:1143dbe4b7cd0325",
+        "android_client_info": {
+          "package_name": "internship.wadimakkah.com.internship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212888257922-8hlukm2hk7q68v84ihmaalsukjn9jifv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN4v5yGaAjxgQ_nZE_IZSOyn3t7cVQYJg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

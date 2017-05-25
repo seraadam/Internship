@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Internship</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Welcome Wadi Makkah</string>
+    <string name="dummy_content2"> Internship Girls </string>
+    <string name="title"> Sign In </string>
+    <string name="forgetpw">Forgot Password</string>
+    <string name="mailsignup">Signup with Mail</string>
+    <string name="githupsignup">Signup with Githup</string>
+</resources>
