@@ -43,7 +43,6 @@ public class AttendanceFragment extends Fragment {
     //----------shared prefrences variables
 
     public static final String MY_PREFS_NAME = "MyAttendanceFile";
-
     SharedPreferences sharedpreferences;
 
     //---------Declair firebase instance----------------
