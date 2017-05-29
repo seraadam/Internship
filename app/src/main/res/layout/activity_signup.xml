@@ -27,6 +27,11 @@
 
         <EditText
             style="@style/editText"
+            android:id="@+id/signupPhone"
+            android:hint="Phone +9665XXXXXXXX"  />
+
+        <EditText
+            style="@style/editText"
             android:id="@+id/signupPass"
             android:inputType="textPassword"
             android:hint="Password" />

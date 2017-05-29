@@ -3,9 +3,20 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowMenuStyle">@style/CMOptionsMenu</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="CMOptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/colorPrimaryDark</item>
+
     </style>
 
     <style name="rootLinerLayout" parent="Theme.AppCompat.Light.NoActionBar">
@@ -15,8 +26,14 @@
         <item name="android:windowBackground">@drawable/signin</item>
 
 
-
     </style>
+<style name="ThemeOverlay.AppCompat.ActionBar" >
+
+    <item name="android:textColor">@color/white</item>
+
+
+</style>
+
 
     <style name="button" >
 
@@ -105,5 +122,10 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
+    <style name="attendbutton" >
+
+
+
+    </style>
 
 </resources>

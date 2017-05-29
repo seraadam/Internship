@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="internship.wadimakkah.com.Fragments.AttendanceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="365dp"
+            android:layout_gravity="top"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/checkout2"
+            android:id="@+id/imageView2" />
+
+
+            <Button
+                android:gravity="center_vertical"
+                android:id="@+id/checkout"
+                android:text="@string/Out"
+                android:layout_margin="@dimen/marginrightEditetext"
+                android:layout_width="100dp"
+                android:textAlignment="center"
+                android:textColor= "#ffffff"
+                android:background="@drawable/roundoutbutton"
+                android:textSize="@dimen/buttomOnlyTextSize"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:background="#000"
+            android:layout_height="400dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="top" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="365dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/checkin"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/imageView" />
+
+            <Button
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/checkin"
+                android:text="@string/In"
+                android:layout_width="100dp"
+                android:textColor= "#ffffff"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/marginrightEditetext"
+                android:background="@drawable/roundinbutton"
+                android:textSize="@dimen/buttomOnlyTextSize"
+                android:layout_height="100dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

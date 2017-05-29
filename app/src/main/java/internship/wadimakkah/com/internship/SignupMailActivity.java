@@ -31,6 +31,7 @@ public class SignupMailActivity extends AppCompatActivity {
 
         final EditText signupName = (EditText) findViewById(R.id.fullname);
         final EditText signupEmail = (EditText) findViewById(R.id.signupEmail);
+        final EditText signupPhone = (EditText) findViewById(R.id.signupPhone);
         final EditText signupPass = (EditText) findViewById(R.id.signupPass);
         final EditText signupConfrimPass = (EditText) findViewById(R.id.signupConfrimPass);
 
@@ -42,6 +43,7 @@ public class SignupMailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final String nameSignup = signupName.getText().toString();
                 final String emailSignup = signupEmail.getText().toString();
+                final String phoneSignup = signupPhone.getText().toString();
                 final String passSignup = signupPass.getText().toString();
                 final String confrimPassSignup = signupConfrimPass.getText().toString();
 
@@ -70,9 +72,8 @@ public class SignupMailActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     Toast.makeText(SignupMailActivity.this, "Welcome Internship Girls :) ", Toast.LENGTH_SHORT).show();
 
-
                                     //save the other user info.
-                                    User user=new User(nameSignup,passSignup ,emailSignup);
+                                    User user=new User(nameSignup,passSignup ,emailSignup , phoneSignup );
                                     //1- Declare the DB refrence :)
                                     Firebase.setAndroidContext(getApplicationContext());
                                     Firebase mDatabase = new Firebase("https://internship-57a51.firebaseio.com/");
