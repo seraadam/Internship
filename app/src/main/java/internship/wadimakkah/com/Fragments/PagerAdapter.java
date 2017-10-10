@@ -30,7 +30,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
                 AttendanceFragment attFragment = new AttendanceFragment();
                 return attFragment.newInstance(0, "Page # 1");
             case 1: // Fragment # 0 - This will show FirstFragment different title
-                AttendanceFragment atFragment = new AttendanceFragment();
+                AnnouncementFragment atFragment = new AnnouncementFragment();
                 return atFragment.newInstance(1, "Page # 2");
             case 2: // Fragment # 1 - This will show SecondFragment
                 AttendanceFragment atrFragment = new AttendanceFragment();

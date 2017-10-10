@@ -9,15 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+
+
 import java.util.List;
 
 import internship.wadimakkah.com.dpObjects.Announcement;
 import internship.wadimakkah.com.internship.R;
 
-
-public class AnnounceCardAdapter extends RecyclerView.Adapter<AnnounceCardAdapter.MyViewHolder>
+ /*
+public class ProjectsCardAdapter extends RecyclerView.Adapter<ProjectsCardAdapter.MyViewHolder>
     {
-        private Context mContext;
+       /* private Context mContext;
         private List<Announcement> announcelist;
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -32,7 +34,7 @@ public class AnnounceCardAdapter extends RecyclerView.Adapter<AnnounceCardAdapte
             }
         }
 
-        public AnnounceCardAdapter(Context mContext, List<Announcement> announcelist) {
+        public ProjectsCardAdapter(Context mContext, List<Announcement> announcelist) {
             this.mContext = mContext;
             this.announcelist = announcelist;
         }
@@ -45,11 +47,11 @@ public class AnnounceCardAdapter extends RecyclerView.Adapter<AnnounceCardAdapte
 
 
         @Override
-        public void onBindViewHolder(AnnounceCardAdapter.MyViewHolder holder, int position) {
+        public void onBindViewHolder(ProjectsCardAdapter.MyViewHolder holder, int position) {
 
             final Announcement announce = announcelist.get(position);
             holder.date.setText(announce.getDate());
-            holder.announce_text.setText(announce.getannounce());
+            holder.announce_text.setText(announce.getText());
 
             holder.announce_text.setTextColor(Color.parseColor("#607D8B"));
             holder.date.setTextColor(Color.parseColor("#F06292"));
@@ -63,6 +65,6 @@ public class AnnounceCardAdapter extends RecyclerView.Adapter<AnnounceCardAdapte
 
     }
 
-
+*/
 
 

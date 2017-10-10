@@ -1,19 +1,18 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:card_view="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        card_view:cardBackgroundColor="@android:color/white"
-        card_view:cardElevation="4sp"
-        card_view:cardUseCompatPadding="true"
-        card_view:cardCornerRadius="@dimen/card_radius"
-        >
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="4sp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="@dimen/card_radius"
+            >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,10 +23,9 @@
             android:layout_marginBottom="@dimen/cardMargintop"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="text"
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
                 android:id="@+id/announcementtext" />
 
             <View

@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -34,19 +33,18 @@ import java.util.List;
 import internship.wadimakkah.com.dpObjects.Announcement;
 import internship.wadimakkah.com.internship.R;
 
-public class AnnouncementFragment extends Fragment {
+public class AnnouncementadminFragment extends Fragment {
 
     //-----Store instance variables
     private String title;
     private int page;
     private RecyclerView recyclerView;
-    private FloatingActionButton addannounce;
     private AnnounceCardAdapter adapter;
     private List<Announcement> announcelist;
-    private AnnouncementadminFragment.OnFragmentInteractionListener mListener;
+    private OnFragmentInteractionListener mListener;
     private DatabaseReference mDatabase;
 
-    public AnnouncementFragment() {
+    public AnnouncementadminFragment() {
         // Required empty public constructor
     }
 
@@ -75,7 +73,7 @@ public class AnnouncementFragment extends Fragment {
 
         //---------------------define recyclerview---------------------------
         recyclerView = (RecyclerView) rootview.findViewById(R.id.recycler_view);
-        addannounce = (FloatingActionButton)  rootview.findViewById(R.id.addannounce);
+
         //-----------------create list for the announcements-----------------------
         announcelist = new ArrayList<>();
 
@@ -89,12 +87,7 @@ public class AnnouncementFragment extends Fragment {
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
-        addannounce.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addannouncementmethod(v);
-            }
-        });
+
         //--------setting the used data (i can replace it with the asynchronous method
         getAnnouncements();
 
@@ -112,7 +105,7 @@ public class AnnouncementFragment extends Fragment {
 
         for (int i = 0; i <= 20; i++) {
             String text = "greate announcement welcome to wadi makkah internship";
-            Announcement a = new Announcement(getDate(), text, "WAdi makkah has a closing event @ October");
+            Announcement a = new Announcement(getDate(), text, "programming");
             announcelist.add(a);
         }
     }

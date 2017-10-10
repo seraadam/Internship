@@ -125,7 +125,12 @@
     <style name="attendbutton" >
 
 
+    </style>
+ <style name="CustomDialogTheme" >
+
+
 
     </style>
+
 
 </resources>

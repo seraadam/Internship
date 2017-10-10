@@ -15,4 +15,8 @@
     <dimen name="marginBottomLastEditeText">20dp</dimen>
     <dimen name="ButtonTextSize">12sp</dimen>
     <dimen name="buttomOnlyTextSize">14sp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="cardMargin">20dp</dimen>
+    <dimen name="cardMargintop">20dp</dimen>
+
 </resources>
